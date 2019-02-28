@@ -1170,7 +1170,7 @@ fieldset[disabled] .form-control {
 
 .section .responsive-background {
   position: relative;
-  background-color: #c5a47e;
+  background-color: #cab9a5;
   padding: 0;
   z-index: 1;
   background-size: cover;
@@ -1284,10 +1284,11 @@ fieldset[disabled] .form-control {
   background: #50236F;
 }
 
-/* .filter.filter-color-red:before {
+/* 
+.filter.filter-color-red:before {
   background: #ffffff;
 } */
-.filter.filter-gradient-black:before {
+.filter.filter-gradient-black {
   background: #1f1c2c;
   /* Old browsers */
   background: -moz-linear-gradient(-45deg, #1f1c2c 0%, #928dab 100%);
