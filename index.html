@@ -1,310 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/img/tck.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="assets/img/tck.png"
+        />
 
-<head>
-    <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/tck.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/tck.png" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Complete Website Design & Development solutions. e-Commerce Websites, WordPress Webites and Designs.."
+        />
+        <meta
+            name="keywords"
+            content="website, website build, landing pages, website re-design, wordpress website,
+    bootstrap website, single page website, website design,woocommerce, web development
+    wordpress design, wordpress blogs, blogging site, e-commerce website, html5, css3, mobile first, responsive"
+        />
+        <meta name="robots" content="noindex" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Complete Website Design & Development solutions. e-Commerce Websites, WordPress Webites and Designs.." />
-    <meta name="keywords" content="website, website build, landing pages, website re-design, wordpress website,
-    bootstrap, single page website, website design,woocommerce, web development
-    wordpress design, e-commerce website, html5, css3, mobile first, responsive" />
-    <meta name="robots" content="noindex">
+        <!-- Facebook and Twitter integration -->
+        <meta
+            property="og:title"
+            content="The Creative Kiwi: Website Design & Development"
+        />
+        <meta property="og:image" content="./assets/img/tck.png" />
+        <meta property="og:url" content="thecreativekiwi.tk" />
+        <meta property="og:site_name" content="The Creative Kiwi" />
+        <meta
+            property="og:description"
+            content="Complete Website Design & Development solutions. e-Commerce Websites, WordPress Webites and Designs.."
+        />
+        <meta
+            name="twitter:title"
+            content="The Creative Kiwi: Website Design & Development"
+        />
+        <meta name="twitter:image" content="./assets/img/tck.png" />
+        <meta name="twitter:url" content="thecreativekiwi.tk" />
+        <meta
+            name="twitter:card"
+            content="Complete Website Design & Development solutions. e-Commerce Websites, WordPress Webites and Designs.."
+        />
 
+        <title>
+            The Creative Kiwi: Website Design & Development
+        </title>
+        <meta
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+            name="viewport"
+        />
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link href="assets/css/gaia.css" rel="stylesheet" />
 
+        <!--     Fonts and icons     -->
 
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="The Creative Kiwi: Website Design & Development" />
-    <meta property="og:image" content="./assets/img/tck.png" />
-    <meta property="og:url" content="thecreativekiwi.tk" />
-    <meta property="og:site_name" content="The Creative Kiwi" />
-    <meta property="og:description" content="Complete Website Design & Development solutions. e-Commerce Websites, WordPress Webites and Designs.." />
-    <meta name="twitter:title" content="The Creative Kiwi: Website Design & Development" />
-    <meta name="twitter:image" content="./assets/img/tck.png" />
-    <meta name="twitter:url" content="thecreativekiwi.tk" />
-    <meta name="twitter:card" content="Complete Website Design & Development solutions. e-Commerce Websites, WordPress Webites and Designs.." />
+        <link
+            href="https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet" />
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-134080378-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-    <title>
-        The Creative Kiwi: Website Design & Development
-    </title>
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/gaia.css" rel="stylesheet" />
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-    <!--     Fonts and icons     -->
+            gtag("config", "UA-134080378-1");
+        </script>
+    </head>
 
-    <link href="https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600" rel="stylesheet" type="text/css" />
-    <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134080378-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-
-        gtag("config", "UA-134080378-1");
-    </script>
-
-</head>
-
-<body>
-    <nav id="nav" class="navbar navbar-transparent navbar-default  navbar-fixed-top  " color-on-scroll="200">
-        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
-        <div class="container">
-            <div class="navbar-header">
-                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar bar1"></span>
-                    <span class="icon-bar bar2"></span>
-                    <span class="icon-bar bar3"></span>
-                </button>
-
-                <a href="#" class="navbar-brand  "> The Creative Kiwi </a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right navbar-uppercase">
-                    <li><a href="#services_sec">Services</a></li>
-                    <li><a href="#team">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-    </nav>
-
-    <div class="section section-header   ">
-        <div class="parallax filter filter-gradient-black  ">
-            <div class="image" style="background-image: url('assets/img/head.jpg')"></div>
+    <body>
+        <nav
+            id="nav"
+            class="navbar navbar-transparent navbar-default  navbar-fixed-top  "
+            color-on-scroll="200"
+        >
+            <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
             <div class="container">
-                <div class="content">
-                    <div class="title-area">
-                        <h1><span style=" opacity: 0; font-size: 0%">website, website design, wordpress, blogs, website development, e-commerce website, web design</span></h1>
-                        <h1 class="text-white ">
-                            We Help You Build Your Site.
-                        </h1>
-                        <div class="separator line-separator">♦</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a id="services_sec"></a>
-    </div>
+                <div class="navbar-header">
+                    <button
+                        id="menu-toggle"
+                        type="button"
+                        class="navbar-toggle"
+                        data-toggle="collapse"
+                        data-target="#example"
+                    >
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
 
-   
-
-    <div class="section">
-        <div class="container">
-        
-                <iframe width="100%" height="300px" src="https://www.youtube.com/embed/yI71Kf3YohI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="title-area">
-                    <h2>Our Services</h2>
-                    <div class="separator separator-danger">✻</div>
-                    <p class="description">
-                        We promise you a new look and best design. We build
-                        that by getting to know you, your needs and creating
-                        the best curated Websites.<span style=" opacity: 0; font-size: 0%">digital marketing, online store, search engine</span>
-                    </p>
+                    <a href="#" class="navbar-brand  "> The Creative Kiwi </a>
                 </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                        <li><a href="#services_sec">Services</a></li>
+                        <li><a href="#team">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-lg-3">
-                    <div class="info-icon">
-                        <div class="icon text-danger">
-                            <i class="pe-7s-look"></i>
-                        </div>
-                        <h3>Retina Ready</h3>
-                        <p class="description">
-                            Visual appeal is an extremely important aspect of web design particularly when it comes
-                            to building a lasting
-                            relationship and brand affinity with your visitors.<span style=" opacity: 0; font-size: 0%">we provide blogging platforms with themes and plugins</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-lg-3">
-                    <div class="info-icon">
-                        <div class="icon text-danger">
-                            <i class="pe-7s-scissors"></i>
-                        </div>
-                        <h3>Designer Websites</h3>
-                        <p class="description">
-                            Our web and graphic designers develop design
-                            concepts that will meet and exceed your
-                            expectations and your marketing goals.<span style=" opacity: 0; font-size: 0%">We help you create a blog. leave graphic design to us.We are a website designing company who specialize in making blog posts</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-lg-3">
-                    <div class="info-icon">
-                        <div class="icon text-danger">
-                            <i class="pe-7s-airplay"></i>
-                        </div>
-                        <h3>Fully Responsive</h3>
-                        <p class="description">
-                            We make our design perfect and fully responsive
-                            to render on any mobile and web platforms.<span style=" opacity: 0; font-size: 0%">We can also make news sites. We are a web design company that can help you build your ecommerce platform or help you set up your personal popular blogging site.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-lg-3">
-                    <div class="info-icon">
-                        <div class="icon text-danger">
-                            <i class="pe-7s-folder"></i>
-                        </div>
-                        <h3>Content Management Systems</h3>
-                        <p class="description">
-                            Take control of your web site’s content with
-                            tools that simplify the task of adding, removing
-                            and editing and make updating your site much
-                            easier.<span style=" opacity: 0; font-size: 0%">We are a website designing and development company with special focus on user friendly web development credit card. We are based in Mumbai.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-lg-3">
-                    <div class="info-icon">
-                        <div class="icon text-danger">
-                            <i class="pe-7s-cloud"></i>
-                        </div>
-                        <h3>Hosting</h3>
-                        <p class="description">
-                            We offer multi-platform hosting solutions to
-                            ensure minimal downtime and a successful web
-                            presence.<span style=" opacity: 0; font-size: 0%">We provide a user friendly shopping experience.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-lg-3">
-                    <div class="info-icon">
-                        <div class="icon text-danger">
-                            <i class="pe-7s-search"></i>
-                        </div>
-                        <h3>SEO Ready</h3>
-                        <p class="description">
-                            We believe one of the most important steps in
-                            developing an effective web site is optimizing
-                            content for maximum search engine visibility.<span style=" opacity: 0; font-size: 0%"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        </nav>
 
-    <a id="team"></a>
-    <div class="section section-our-team-freebie">
-        <div class="parallax filter filter-color-black">
-            <div class="image" style="background-image:url('assets/img/team.jpg')"></div>
-            <div class="container">
-                <div class="content">
-                    <div class="row">
+        <div class="section section-header   ">
+            <div class="parallax filter filter-gradient-black  ">
+                <div
+                    class="image"
+                    style="background-image: url('assets/img/head.jpg')"
+                ></div>
+                <div class="container">
+                    <div class="content">
                         <div class="title-area">
-                            <h2>Who We Are</h2>
-                            <div class="separator separator-danger">✻</div>
+                            <h1>
+                                <span style=" opacity: 0; font-size: 0%"
+                                    >website, website design, wordpress, blogs,
+                                    website development, e-commerce website, web
+                                    design</span
+                                >
+                            </h1>
+                            <h1 class="text-white ">
+                                We Help You Build Your Site.
+                            </h1>
+                            <div class="separator line-separator">♦</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container embed-responsive-4by3">
+                <iframe
+                    width="100%"
+                    height="400px"
+                    src="https://www.youtube.com/embed/yI71Kf3YohI"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+                <a id="services_sec"></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="title-area">
+                        <h2>Our Services</h2>
+                        <div class="separator separator-danger">✻</div>
+                        <p class="description">
+                            We promise you a new look and best design. We build
+                            that by getting to know you, your needs and creating
+                            the best curated Websites.<span
+                                style=" opacity: 0; font-size: 0%"
+                                >digital marketing, online store, search
+                                engine</span
+                            >
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="info-icon">
+                            <div class="icon text-danger">
+                                <i class="pe-7s-look"></i>
+                            </div>
+                            <h3>Retina Ready</h3>
                             <p class="description">
-                                We are team of Motivated Designers and
-                                Engineers trying to help you find your web
-                                heaven.<span style=" opacity: 0; font-size: 0%"></span>
+                                Visual appeal is an extremely important aspect
+                                of web design particularly when it comes to
+                                building a lasting relationship and brand
+                                affinity with your visitors.<span
+                                    style=" opacity: 0; font-size: 0%"
+                                    >we provide blogging platforms with themes
+                                    and plugins</span
+                                >
                             </p>
                         </div>
                     </div>
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="info-icon">
+                            <div class="icon text-danger">
+                                <i class="pe-7s-scissors"></i>
+                            </div>
+                            <h3>Designer Websites</h3>
+                            <p class="description">
+                                Our web and graphic designers develop design
+                                concepts that will meet and exceed your
+                                expectations and your marketing goals.<span
+                                    style=" opacity: 0; font-size: 0%"
+                                    >We help you create a blog. leave graphic
+                                    design to us.We are a website designing
+                                    company who specialize in making blog
+                                    posts</span
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="info-icon">
+                            <div class="icon text-danger">
+                                <i class="pe-7s-airplay"></i>
+                            </div>
+                            <h3>Fully Responsive</h3>
+                            <p class="description">
+                                We make our design perfect and fully responsive
+                                to render on any mobile and web platforms.<span
+                                    style=" opacity: 0; font-size: 0%"
+                                    >We can also make news sites. We are a web
+                                    design company that can help you build your
+                                    ecommerce platform or help you set up your
+                                    personal popular blogging site.</span
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="info-icon">
+                            <div class="icon text-danger">
+                                <i class="pe-7s-folder"></i>
+                            </div>
+                            <h3>Content Management Systems</h3>
+                            <p class="description">
+                                Take control of your web site’s content with
+                                tools that simplify the task of adding, removing
+                                and editing and make updating your site much
+                                easier.<span style=" opacity: 0; font-size: 0%"
+                                    >We are a website designing and development
+                                    company with special focus on user friendly
+                                    web development credit card. We are based in
+                                    Mumbai.</span
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="info-icon">
+                            <div class="icon text-danger">
+                                <i class="pe-7s-cloud"></i>
+                            </div>
+                            <h3>Hosting</h3>
+                            <p class="description">
+                                We offer multi-platform hosting solutions to
+                                ensure minimal downtime and a successful web
+                                presence.<span
+                                    style=" opacity: 0; font-size: 0%"
+                                    >We provide a user friendly shopping
+                                    experience.</span
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="info-icon">
+                            <div class="icon text-danger">
+                                <i class="pe-7s-search"></i>
+                            </div>
+                            <h3>SEO Ready</h3>
+                            <p class="description">
+                                We believe one of the most important steps in
+                                developing an effective web site is optimizing
+                                content for maximum search engine
+                                visibility.<span
+                                    style=" opacity: 0; font-size: 0%"
+                                    >We build Complete e-commerce webstore with
+                                    wordpress e-commerce and content Management
+                                    Systems. We build Webites Design with
+                                    marketing solutions.</span
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    <div class="team">
+        
+        <div class="section section-our-team-freebie">
+            <a id="team"></a>
+            <div class="parallax filter filter-color-black">
+                <div
+                    class="image"
+                    style="background-image:url('assets/img/team.jpg')"
+                ></div>
+                <div class="container">
+                    
+                    <div class="content">
                         <div class="row">
-                            <div class="col-md-12 ">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 ">
-                                        <div class="card card-member">
-                                            <div class="content">
-                                                <div class="avatar avatar-danger">
-                                                    <img alt="..." class="img-circle" src="assets/img/faces/nikhil.jpg" />
+                          
+                            <div class="title-area">
+                                <h2>Who We Are</h2>
+                                <div class="separator separator-danger">✻</div>
+                                <p class="description">
+                                    We are team of Motivated Designers and
+                                    Engineers trying to help you find your web
+                                    heaven.<span
+                                        style=" opacity: 0; font-size: 0%"
+                                    ></span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-6 ">
+                                            <div class="card card-member">
+                                                <div class="content">
+                                                    <div
+                                                        class="avatar avatar-danger"
+                                                    >
+                                                        <img
+                                                            alt="..."
+                                                            class="img-circle"
+                                                            src="assets/img/faces/nikhil.jpg"
+                                                            title="Nikhil Namal"
+                                                        />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3 class="title">
+                                                            Nikhil Namal
+                                                        </h3>
+                                                        <p class="small-text">
+                                                            Co-Founder
+                                                        </p>
+                                                        <p class="description">
+                                                            Full Stack Engineer
+                                                            & Product Developer.
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                                <div class="description">
-                                                    <h3 class="title">
-                                                        Nikhil Namal
-                                                    </h3>
-                                                    <p class="small-text">
-                                                        Co-Founder
-                                                    </p>
-                                                    <p class="description">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="card card-member">
+                                                <div class="content">
+                                                    <div
+                                                        class="avatar avatar-danger"
+                                                    >
+                                                        <img
+                                                            alt="..."
+                                                            class="img-circle"
+                                                            src="assets/img/faces/karan.jpg"
+                                                            title="Karan Bhatt"
+                                                        />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3 class="title">
+                                                            Karan Bhatt
+                                                        </h3>
+                                                        <p class="small-text">
+                                                            Co-Founder
+                                                        </p>
+                                                        <p class="description">
+                                                        Product Developer &
+                                                            Content Writer.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="card card-member">
+                                                <div class="content">
+                                                    <div
+                                                        class="avatar avatar-danger"
+                                                    >
+                                                        <img
+                                                            alt="..."
+                                                            class="img-circle"
+                                                            src="assets/img/faces/rishabh.jpeg"
+                                                            title="Rishabh Kanojia"
+                                                        />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3 class="title">
+                                                            Rishabh Kanojia
+                                                        </h3>
+                                                        <p class="small-text">
+                                                            Co-Founder
+                                                        </p>
+                                                        <p class="description">
+                                                            Product Designer &
+                                                            Data Scientist.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="card card-member">
+                                                <div class="content">
+                                                    <div
+                                                        class="avatar avatar-danger"
+                                                    >
+                                                        <img
+                                                            alt="..."
+                                                            class="img-circle"
+                                                            src="assets/img/faces/vidhit.jpg"
+                                                            title="Vidhit Varma"
+                                                        />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3 class="title">
+                                                            Vidhit Varma
+                                                        </h3>
+                                                        <p class="small-text">
+                                                            Co-Founder
+                                                        </p>
+                                                        <p class="description">
+                                                            Game Developer &
+                                                            Marketing Head.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="card card-member  ">
+                                                <div class="content">
+                                                    <div
+                                                        class="avatar avatar-danger"
+                                                    >
+                                                        <img
+                                                            alt="..."
+                                                            class="img-circle"
+                                                            src="assets/img/faces/basit.jpeg"
+                                                            title="Basit Ali"
+                                                        />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3 class="title">
+                                                            Basit Ali Syed
+                                                        </h3>
+                                                        <p class="small-text">
+                                                            Team Member
+                                                        </p>
+                                                        <p class="description">
+                                                            Product Developer &
+                                                            Personal Realations
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="card card-member  ">
+                                                <div class="content">
+                                                    <div class="avatar avatar-danger">
+                                                        <img alt="..." class="img-circle" src="assets/img/faces/dheeraj.png" title="Dheeraj Mogeveera" />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3 class="title">
+                                                          Dheeraj Mogeveera
+                                                        </h3>
+                                                        <p class="small-text">
+                                                            Team Member
+                                                        </p>
+                                                        <p class="description">
                                                         Full Stack Engineer
                                                         & Product Developer.
-                                                    </p>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="card card-member">
-                                            <div class="content">
-                                                <div class="avatar avatar-danger">
-                                                    <img alt="..." class="img-circle" src="assets/img/faces/karan.jpg" />
-                                                </div>
-                                                <div class="description">
-                                                    <h3 class="title">
-                                                        Karan Bhatt
-                                                    </h3>
-                                                    <p class="small-text">
-                                                        Co-Founder
-                                                    </p>
-                                                    <p class="description">
-                                                        Product Designer &
-                                                        Content Writer.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="card card-member">
-                                            <div class="content">
-                                                <div class="avatar avatar-danger">
-                                                    <img alt="..." class="img-circle" src="assets/img/faces/rishabh.jpg" />
-                                                </div>
-                                                <div class="description">
-                                                    <h3 class="title">
-                                                        Rishabh Kanojia
-                                                    </h3>
-                                                    <p class="small-text">
-                                                        Co-Founder
-                                                    </p>
-                                                    <p class="description">
-                                                        Product Developer &
-                                                        Data Scientist.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="card card-member">
-                                            <div class="content">
-                                                <div class="avatar avatar-danger">
-                                                    <img alt="..." class="img-circle" src="assets/img/faces/vidhit.jpg" />
-                                                </div>
-                                                <div class="description">
-                                                    <h3 class="title">
-                                                        Vidhit Varma
-                                                    </h3>
-                                                    <p class="small-text">
-                                                        Co-Founder
-                                                    </p>
-                                                    <p class="description">
-                                                        Game Developer &
-                                                        Marketing Head.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+
+                                        <!-- End of card-member  -->
                                     </div>
                                 </div>
                             </div>
@@ -313,90 +494,98 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="section section-small section-get-started">
-        <div class="parallax filter">
-            <div class="image" style="background-image: url('assets/img/office-1.jpg')"></div>
-            <div class="container">
-                <div class="title-area">
-                    <h2 class="text-white">Work with us!</h2>
-                    <div class="separator line-separator">♦</div>
-                    <p class="description">
-                        We want our designs to reflect your vision and your
-                        idea's. We do our best to understand what represents
-                        your idea's the best so that your web presence
-                        reflects it.
-                    </p>
-                </div>
-
-                <div class="button-get-started">
-                    <a href="contact.html" class="btn btn-danger btn-fill btn-lg">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section section-header ">
-        <div class="parallax filter filter-color-red ">
-            <div class="image" style="background-image: url('assets/img/Justcreate.jpg')"></div>
-            <div class="container" style="padding-bottom: 100px;">
-                <div class="content">
+        <div class="section section-small section-get-started">
+            <div class="parallax filter">
+                <div
+                    class="image"
+                    style="background-image: url('assets/img/office-1.jpg')"
+                ></div>
+                <div class="container">
                     <div class="title-area">
-                        <h2 class="title-modern">
-                            Create!
-                        </h2>
-                        <h3 class="title-white">Leave the rest to us.</h3>
+                        <h2 class="text-white">Work with us!</h2>
+                        <div class="separator line-separator">♦</div>
+                        <p class="description">
+                            We want our designs to reflect your vision and your
+                            idea's. We do our best to understand what represents
+                            your idea's the best so that your web presence
+                            reflects it.
+                        </p>
+                    </div>
+
+                    <div class="button-get-started">
+                        <a
+                            href="contact.html"
+                            class="btn btn-danger btn-fill btn-lg"
+                            >Contact Us</a
+                        >
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <footer class="footer footer-big footer-color-black" data-color="black">
-        <div class="container">
-            <div class="row ">
-                <div class="col-sm-4">
-                    <p>Drop Us A Mail</p>
-                    <p>
-                        <span class="glyphicon glyphicon-envelope"></span>
-                        Email: thecreativekiwi01@gmail.com
-                    </p>
+        <div class="section section-header ">
+            <div class="parallax filter filter-color-red ">
+                <div
+                    class="image"
+                    style="background-image: url('assets/img/Justcreate.jpg')"
+                ></div>
+                <div class="container" style="padding-bottom: 100px;">
+                    <div class="content">
+                        <div class="title-area">
+                            <h2 class="title-modern">
+                                Create!
+                            </h2>
+                            <h3 class="title-white">Leave the rest to us.</h3>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <p>Call Us</p>
-                    <p>
-                        <span class="pe-7s-phone"></span> Phone 1: +91
-                        9768346437
-                    </p>
-                    <p>
-                        <span class="pe-7s-phone"></span> Phone 2: +91
-                        9769855546
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <p>Location</p>
-                    <p>
-                        <span class="pe-7s-map-marker"></span> Mumbai, India
-                    </p>
-                </div>
-            </div>
-            <hr />
-            <div class="copyright">
-                ©
-                <script>
-                    document.write(new Date().getFullYear());
-                </script>
-                The Creative Kiwi
             </div>
         </div>
-    </footer>
-    <!--   core js files    -->
-    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="assets/js/modernizr.js"></script>
-    <script type="text/javascript" src="assets/js/gaia.js"></script>
-</body>
+        <footer class="footer footer-big footer-color-black" data-color="black">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-sm-4">
+                        <p>Drop Us A Mail</p>
+                        <p>
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            Email: thecreativekiwi01@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>Call Us</p>
+                        <p>
+                            <span class="pe-7s-phone"></span> Phone 1: +91
+                            9768346437
+                        </p>
+                        <p>
+                            <span class="pe-7s-phone"></span> Phone 2: +91
+                            9769855546
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>Location</p>
+                        <p>
+                            <span class="pe-7s-map-marker"></span> Mumbai, India
+                        </p>
+                    </div>
+                </div>
+                <hr />
+                <div class="copyright">
+                    ©
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    The Creative Kiwi
+                </div>
+            </div>
+        </footer>
+        <!--   core js files    -->
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
+        <script type="text/javascript" src="assets/js/modernizr.js"></script>
+        <script type="text/javascript" src="assets/js/gaia.js"></script>
+    </body>
 </html>
